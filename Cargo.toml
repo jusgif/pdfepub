@@ -1,0 +1,14 @@
+[package]
+name = "pdfepub"
+version = "0.1.0"
+edition = "2021"
+description = "Rust PDF to reflowable EPUB converter with Tesseract OCR"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+regex = "1"
+quick-xml = "0.37"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+tempfile = "3"
+uuid = { version = "1", features = ["v4"] }
